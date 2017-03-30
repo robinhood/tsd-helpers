@@ -6,11 +6,11 @@
    argument.
 
 * tcollector_sink.py: We
-   use [Statsite](https://github.com/statsite/statsite Statsite)
-   locally on every box to collect statsd metrics. We also have a
-   tcollector running on every machine in our infrastructure. This
-   helper dumps the statsd metrics from statsite into the local
-   tcollector's UDP listener.
+   use [Statsite](https://github.com/statsite/statsite) locally on
+   every box to collect statsd metrics. We also have a tcollector
+   running on every machine in our infrastructure. This helper dumps
+   the statsd metrics from statsite into the local tcollector's UDP
+   listener.
 
 * opentsdb_trimmer.py: We currently don't salt metrics when we store
    them in HBase. For such setups, this script uses the HBase Thrift
